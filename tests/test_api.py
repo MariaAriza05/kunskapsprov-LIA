@@ -13,6 +13,6 @@ def test_find_available_pets_returns_list():
     data = response.json()
     assert isinstance(data, list)
 
-    # 3. Det ska finnas minst 1 pet
+    # 3. Det ska inte vara tom minnst 1 pet i listan
     assert len(data) > 0
-    
+
